@@ -35,3 +35,9 @@ while True:
         and ping_pong.xcor() < -320
     ):
         ping_pong.x_move()
+
+    if ping_pong.xcor() > 380:
+        ping_pong.reset_position()
+
+    if ping_pong.xcor() < -380:
+        ping_pong.reset_position()
