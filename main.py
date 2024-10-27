@@ -23,7 +23,7 @@ screen.onkey(left_paddle.move_down, "s")
 
 game_is_on = True
 while True:
-    time.sleep(0.1)
+    time.sleep(ping_pong.move_speed)
     screen.update()
     ping_pong.move()
 
