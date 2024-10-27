@@ -2,6 +2,7 @@ import turtle
 import paddle
 import ball
 import time
+import scoreboard
 
 screen = turtle.Screen()
 screen.setup(width=800, height=800)
