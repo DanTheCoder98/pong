@@ -40,6 +40,8 @@ while True:
 
     if ping_pong.xcor() > 380:
         ping_pong.reset_position()
+        score_board.left_point()
 
     if ping_pong.xcor() < -380:
         ping_pong.reset_position()
+        score_board.right_point()
