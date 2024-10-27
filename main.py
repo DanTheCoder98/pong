@@ -8,10 +8,13 @@ screen.title("Pong")
 screen.tracer(0)
 screen.listen()
 
-paddle_one = paddle.Paddle()
+right_paddle = paddle.Paddle((350, 0))
+left_paddle = paddle.Paddle((-350, 0))
 
-screen.onkey(fun=paddle_one.move_up, key="Up")
-screen.onkey(fun=paddle_one.move_down, key="Down")
+screen.onkey(right_paddle.move_up, "Up")
+screen.onkey(right_paddle.move_down, "Down")
+screen.onkey(left_paddle.move_up, "w")
+screen.onkey(left_paddle.move_down, "s")
 
 game_is_on = True
 while True:
