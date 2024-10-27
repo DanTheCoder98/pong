@@ -36,7 +36,7 @@ while True:
         or ping_pong.distance(left_paddle) < 50
         and ping_pong.xcor() < -320
     ):
-        ping_pong.x_move()
+        ping_pong.bounce_x()
 
     if ping_pong.xcor() > 380:
         ping_pong.reset_position()
